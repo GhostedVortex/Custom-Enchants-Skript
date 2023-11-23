@@ -20,3 +20,7 @@ Something most of you may not have seen before: Settings! This feature provides 
 
 # More Coming Soon!
 This Skript is currently in development, so be prepared for future updates.
+
+# Disclaimer!
+
+This Skript may or may not be currently functioning correctly. If it is, I plan to revamp it soon to enhance usability and cleanliness.
