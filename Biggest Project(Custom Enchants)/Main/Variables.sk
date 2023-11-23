@@ -1,0 +1,3 @@
+variables:
+    {Gem_Amount.%player%} = 0
+    {Xp_Amount.%player%} = 0

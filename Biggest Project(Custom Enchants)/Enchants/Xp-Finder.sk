@@ -1,0 +1,90 @@
+on inventory click:
+    if name of event-inventory is "&5&lEnchant GUI":
+        cancel event
+        if name of item is "&aXp-Finder &7Tier &7[&aI&7]":
+            if lore of player's tool contains "&aXp-Finder &7Tier &7[&aI&7]":
+                send "&cYou already have that level or above!"
+                cancel event
+            if lore of player's tool contains "&aXp-Finder &7Tier &7[&aII&7]":
+                send "&cYou already have that level or above!"
+                cancel event
+            if lore of player's tool contains "&aXp-Finder &7Tier &7[&aIII&7]":
+                send "&cYou already have the max level of Xp-Finder(For now)"
+                cancel event
+            if lore of player's tool contains "&aXp-Finder: &cNull":
+                if player's inventory contains 1 netherite block named "&0&lCompressed Netherite":
+                    remove 1 netherite block with name "&0&lCompressed Netherite" from player's inventory
+                    set line 1 of lore of player's tool to "&aXp-Finder &7Tier &7[&aI&7]"
+            
+            else:
+                cancel event
+                send "&cYou do not have enough &0&lCompressed Netherite"
+
+        if name of item is "&aXp-Finder &7Tier &7[&aII&7]":
+            if lore of player's tool contains "&aXp-Finder: &cNull":
+                send "&cYou need to buy tier I before buying tier II"
+                cancel event
+            if lore of player's tool contains "&aXp-Finder &7Tier &7[&aII&7]":
+                send "&cYou already have that level or above!"
+                cancel event
+            if lore of player's tool contains "&aXp-Finder &7Tier &7[&aIII&7]":
+                send "&cYou already have the max level of Xp-Finder(For now)"
+                cancel event
+            if lore of player's tool contains "&aXp-Finder &7Tier &7[&aI&7]":
+                if player's inventory contains 10 netherite block named "&0&lCompressed Netherite":
+                    remove 10 netherite block with name "&0&lCompressed Netherite" from player's inventory
+                    set line 1 of lore of player's tool to "&aXp-Finder &7Tier &7[&aII&7]"
+            else:
+                cancel event
+                send "&cYou do not have enough &0&lCompressed Netherite"
+
+        if name of item is "&aXp-Finder &7Tier &7[&aIII&7]":
+            if lore of player's tool contains "&aXp-Finder: &cNull":
+                send "&cYou need to buy tier II before buying tier III"
+                cancel event
+            if lore of player's tool contains "&aXp-Finder &7Tier &7[&aIII&7]":
+                send "&cYou already have the max level of Xp-Finder(For now)"
+                cancel event
+            if lore of player's tool contains "&aXp-Finder &7Tier &7[&aII&7]":
+                if player's inventory contains 64 netherite block named "&0&lCompressed Netherite":
+                    remove 64 netherite block with name "&0&lCompressed Netherite" from player's inventory
+                    set line 1 of lore of player's tool to "&aXp-Finder &7Tier &7[&aIII&7]"
+            else:
+                cancel event
+                send "&cYou do not have enough &0&lCompressed Netherite"
+
+on break:
+    if lore of player's tool contains "&aXp-Finder &7Tier &7[&aI&7]":
+        chance of 1%:
+            send "&7[  &aXp-Finder has triggered! &f| &a+1 XP &7]"
+            add 1 to {Xp_Amount.%player%}
+        chance of 0.5%:
+            send "&7[  &aXp-Finder has triggered! &f| &a+2 XP &7]"
+            add 2 to {Xp_Amount.%player%}
+
+on break:
+    if lore of player's tool contains "&aXp-Finder &7Tier &7[&aII&7]":
+        chance of 2%:
+            send "&7[  &aXp-Finder has triggered! &f| &a+1 XP &7]"
+            add 1 to {Xp_Amount.%player%}
+        chance of 1%:
+            send "&7[  &aXp-Finder has triggered! &f| &a+2 XP &7]"
+            add 2 to {Xp_Amount.%player%}
+        chance of 0.5%:
+            send "&7[  &aXp-Finder has triggered! &f| &a+3 XP &7]"
+            add 3 to {Xp_Amount.%player%}
+
+on break:
+    if lore of player's tool contains "&aXp-Finder &7Tier &7[&aIII&7]":
+        chance of 3%:
+            send "&7[  &dXp-Finder has triggered! &f| &b+1 XP &7]"
+            add 1 to {Xp_Amount.%player%}
+        chance of 2%:
+            send "&7[  &aXp-Finder has triggered! &f| &a+2 XP &7]"
+            add 2 to {Xp_Amount.%player%}
+        chance of 1%:
+            send "&7[  &aXp-Finder has triggered! &f| &a+3 XP &7]"
+            add 3 to {Xp_Amount.%player%}
+        chance of 0.5%:
+            send "&7[  &aXp-Finder has triggered! &f| &a+4 XP &7]"
+            add 4 to {Xp_Amount.%player%}

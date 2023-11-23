@@ -1,0 +1,375 @@
+Enchants:
+    on inventory click:
+    if name of event-inventory is "&aCustom &dEnchants &7GUI":
+        cancel event
+        if name of item is "&aCustom &dEnchants":
+            if {Dark_Mode} = false:
+                open chest inventory with 2 rows named "&aEnchant &7GUI" to player
+                wait 1 tick
+                set slot 0 of player's current inventory to purple stained glass pane with name " "
+                set slot 1 of player's current inventory to purple stained glass pane with name " "
+                set slot 2 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aI&7]"
+                set slot 3 of player's current inventory to purple stained glass pane with name " "
+                set slot 4 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aII&7]"
+                set slot 5 of player's current inventory to purple stained glass pane with name " "
+                set slot 6 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aIII&7]"
+                set slot 7 of player's current inventory to purple stained glass pane with name " "
+                set slot 8 of player's current inventory to purple stained glass pane with name " "
+    
+                set slot 9 of player's current inventory to purple stained glass pane with name " "
+                set slot 10 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dI&7]"
+                set slot 11 of player's current inventory to purple stained glass pane with name " "
+                set slot 12 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dII&7]"
+                set slot 13 of player's current inventory to purple stained glass pane with name " "
+                set slot 14 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dIII&7]"
+                set slot 15 of player's current inventory to purple stained glass pane with name " "
+                set slot 16 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dIV&7]"
+                set slot 17 of player's current inventory to purple stained glass pane with name " "
+    
+                set slot 18 of player's current inventory to purple stained glass pane with name " "
+                set slot 19 of player's current inventory to purple stained glass pane with name " "
+                set slot 20 of player's current inventory to purple stained glass pane with name " "
+                set slot 21 of player's current inventory to purple stained glass pane with name " "
+                set slot 22 of player's current inventory to purple stained glass pane with name " "
+                set slot 23 of player's current inventory to purple stained glass pane with name " "
+                set slot 24 of player's current inventory to purple stained glass pane with name " "
+                set slot 25 of player's current inventory to purple stained glass pane with name " "
+                set slot 26 of player's current inventory to purple stained glass pane with name " "
+    
+                set slot 27 of player's current inventory to purple stained glass pane with name " "
+                set slot 28 of player's current inventory to purple stained glass pane with name " "
+                set slot 29 of player's current inventory to purple stained glass pane with name " "
+                set slot 30 of player's current inventory to purple stained glass pane with name " "
+                set slot 31 of player's current inventory to shiny barrier with name "&cBack" with no NBT
+                set slot 32 of player's current inventory to purple stained glass pane with name " "
+                set slot 33 of player's current inventory to purple stained glass pane with name " "
+                set slot 34 of player's current inventory to purple stained glass pane with name " "
+                set slot 35 of player's current inventory to purple stained glass pane with name " "
+
+            if {Dark_Mode} = true:
+                open chest inventory with 2 rows named "&aEnchant &7GUI" to player
+                wait 1 tick
+                set slot 0 of player's current inventory to black stained glass pane with name " "
+                set slot 1 of player's current inventory to black stained glass pane with name " "
+                set slot 2 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aI&7]"
+                set slot 3 of player's current inventory to black stained glass pane with name " "
+                set slot 4 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aII&7]"
+                set slot 5 of player's current inventory to black stained glass pane with name " "
+                set slot 6 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aIII&7]"
+                set slot 7 of player's current inventory to black stained glass pane with name " "
+                set slot 8 of player's current inventory to black stained glass pane with name " "
+
+                set slot 9 of player's current inventory to black stained glass pane with name " "
+                set slot 10 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dI&7]"
+                set slot 11 of player's current inventory to black stained glass pane with name " "
+                set slot 12 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dII&7]"
+                set slot 13 of player's current inventory to black stained glass pane with name " "
+                set slot 14 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dIII&7]"
+                set slot 15 of player's current inventory to black stained glass pane with name " "
+                set slot 16 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dIV&7]"
+                set slot 17 of player's current inventory to black stained glass pane with name " "
+
+                set slot 18 of player's current inventory to black stained glass pane with name " "
+                set slot 19 of player's current inventory to black stained glass pane with name " "
+                set slot 20 of player's current inventory to black stained glass pane with name " "
+                set slot 21 of player's current inventory to black stained glass pane with name " "
+                set slot 22 of player's current inventory to black stained glass pane with name " "
+                set slot 23 of player's current inventory to black stained glass pane with name " "
+                set slot 24 of player's current inventory to black stained glass pane with name " "
+                set slot 25 of player's current inventory to black stained glass pane with name " "
+                set slot 26 of player's current inventory to black stained glass pane with name " "
+
+                set slot 27 of player's current inventory to black stained glass pane with name " "
+                set slot 28 of player's current inventory to black stained glass pane with name " "
+                set slot 29 of player's current inventory to black stained glass pane with name " "
+                set slot 30 of player's current inventory to black stained glass pane with name " "
+                set slot 31 of player's current inventory to shiny barrier with name "&cBack" with no NBT
+                set slot 32 of player's current inventory to black stained glass pane with name " "
+                set slot 33 of player's current inventory to black stained glass pane with name " "
+                set slot 34 of player's current inventory to black stained glass pane with name " "
+                set slot 35 of player's current inventory to black stained glass pane with name " "
+    
+pickaxes:
+    on inventory click:
+    if name of event-inventory is "&aCustom &dEnchants &7GUI":
+        cancel event
+        if name of item is "&aCustom &dEnchants":
+            if {Dark_Mode} = false:
+                open chest inventory with 2 rows named "&aEnchant &7GUI" to player
+                wait 1 tick
+                set slot 0 of player's current inventory to purple stained glass pane with name " "
+                set slot 1 of player's current inventory to purple stained glass pane with name " "
+                set slot 2 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aI&7]"
+                set slot 3 of player's current inventory to purple stained glass pane with name " "
+                set slot 4 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aII&7]"
+                set slot 5 of player's current inventory to purple stained glass pane with name " "
+                set slot 6 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aIII&7]"
+                set slot 7 of player's current inventory to purple stained glass pane with name " "
+                set slot 8 of player's current inventory to purple stained glass pane with name " "
+    
+                set slot 9 of player's current inventory to purple stained glass pane with name " "
+                set slot 10 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dI&7]"
+                set slot 11 of player's current inventory to purple stained glass pane with name " "
+                set slot 12 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dII&7]"
+                set slot 13 of player's current inventory to purple stained glass pane with name " "
+                set slot 14 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dIII&7]"
+                set slot 15 of player's current inventory to purple stained glass pane with name " "
+                set slot 16 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dIV&7]"
+                set slot 17 of player's current inventory to purple stained glass pane with name " "
+    
+                set slot 18 of player's current inventory to purple stained glass pane with name " "
+                set slot 19 of player's current inventory to purple stained glass pane with name " "
+                set slot 20 of player's current inventory to purple stained glass pane with name " "
+                set slot 21 of player's current inventory to purple stained glass pane with name " "
+                set slot 22 of player's current inventory to purple stained glass pane with name " "
+                set slot 23 of player's current inventory to purple stained glass pane with name " "
+                set slot 24 of player's current inventory to purple stained glass pane with name " "
+                set slot 25 of player's current inventory to purple stained glass pane with name " "
+                set slot 26 of player's current inventory to purple stained glass pane with name " "
+    
+                set slot 27 of player's current inventory to purple stained glass pane with name " "
+                set slot 28 of player's current inventory to purple stained glass pane with name " "
+                set slot 29 of player's current inventory to purple stained glass pane with name " "
+                set slot 30 of player's current inventory to purple stained glass pane with name " "
+                set slot 31 of player's current inventory to shiny barrier with name "&cBack" with no NBT
+                set slot 32 of player's current inventory to purple stained glass pane with name " "
+                set slot 33 of player's current inventory to purple stained glass pane with name " "
+                set slot 34 of player's current inventory to purple stained glass pane with name " "
+                set slot 35 of player's current inventory to purple stained glass pane with name " "
+
+            if {Dark_Mode} = true:
+                open chest inventory with 2 rows named "&aEnchant &7GUI" to player
+                wait 1 tick
+                set slot 0 of player's current inventory to black stained glass pane with name " "
+                set slot 1 of player's current inventory to black stained glass pane with name " "
+                set slot 2 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aI&7]"
+                set slot 3 of player's current inventory to black stained glass pane with name " "
+                set slot 4 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aII&7]"
+                set slot 5 of player's current inventory to black stained glass pane with name " "
+                set slot 6 of player's current inventory to Bottle o' Enchanting with name "&aXp-Finder &7Tier &7[&aIII&7]"
+                set slot 7 of player's current inventory to black stained glass pane with name " "
+                set slot 8 of player's current inventory to black stained glass pane with name " "
+
+                set slot 9 of player's current inventory to black stained glass pane with name " "
+                set slot 10 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dI&7]"
+                set slot 11 of player's current inventory to black stained glass pane with name " "
+                set slot 12 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dII&7]"
+                set slot 13 of player's current inventory to black stained glass pane with name " "
+                set slot 14 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dIII&7]"
+                set slot 15 of player's current inventory to black stained glass pane with name " "
+                set slot 16 of player's current inventory to emerald with name "&dGem-Finder &7Tier &7[&dIV&7]"
+                set slot 17 of player's current inventory to black stained glass pane with name " "
+
+                set slot 18 of player's current inventory to black stained glass pane with name " "
+                set slot 19 of player's current inventory to black stained glass pane with name " "
+                set slot 20 of player's current inventory to black stained glass pane with name " "
+                set slot 21 of player's current inventory to black stained glass pane with name " "
+                set slot 22 of player's current inventory to black stained glass pane with name " "
+                set slot 23 of player's current inventory to black stained glass pane with name " "
+                set slot 24 of player's current inventory to black stained glass pane with name " "
+                set slot 25 of player's current inventory to black stained glass pane with name " "
+                set slot 26 of player's current inventory to black stained glass pane with name " "
+
+                set slot 27 of player's current inventory to black stained glass pane with name " "
+                set slot 28 of player's current inventory to black stained glass pane with name " "
+                set slot 29 of player's current inventory to black stained glass pane with name " "
+                set slot 30 of player's current inventory to black stained glass pane with name " "
+                set slot 31 of player's current inventory to shiny barrier with name "&cBack" with no NBT
+                set slot 32 of player's current inventory to black stained glass pane with name " "
+                set slot 33 of player's current inventory to black stained glass pane with name " "
+                set slot 34 of player's current inventory to black stained glass pane with name " "
+                set slot 35 of player's current inventory to black stained glass pane with name " "
+        
+            if name of item is "&ePickaxes":
+                if {Dark_Mode} is false:
+                    open chest inventory with 3 rows named "&ePickaxe &7GUI" to player
+                    wait 1 tick
+                    set slot 0 of player's current inventory to purple stained glass pane with name " "
+                    set slot 1 of player's current inventory to purple stained glass pane with name " "
+                    set slot 2 of player's current inventory to purple stained glass pane with name " "
+                    set slot 3 of player's current inventory to purple stained glass pane with name " "
+                    set slot 4 of player's current inventory to shiny netherite pickaxe with name "&e%player%'s &7Pick" with no NBT with lore "&7This pickaxe will cost &c&l360 &cCompressed Netherite"
+                    set slot 5 of player's current inventory to purple stained glass pane with name " "
+                    set slot 6 of player's current inventory to purple stained glass pane with name " "
+                    set slot 7 of player's current inventory to purple stained glass pane with name " "
+                    set slot 8 of player's current inventory to purple stained glass pane with name " "
+
+                    set slot 9 of player's current inventory to purple stained glass pane with name " "
+                    set slot 10 of player's current inventory to purple stained glass pane with name " "
+                    set slot 11 of player's current inventory to purple stained glass pane with name " "
+                    set slot 12 of player's current inventory to purple stained glass pane with name " "
+                    set slot 13 of player's current inventory to purple stained glass pane with name " "
+                    set slot 14 of player's current inventory to purple stained glass pane with name " "
+                    set slot 15 of player's current inventory to purple stained glass pane with name " "
+                    set slot 16 of player's current inventory to purple stained glass pane with name " "
+                    set slot 17 of player's current inventory to purple stained glass pane with name " "
+
+                    set slot 18 of player's current inventory to purple stained glass pane with name " "
+                    set slot 19 of player's current inventory to purple stained glass pane with name " "
+                    set slot 20 of player's current inventory to shiny netherite pickaxe with name "&e%player%'s &aXp-Finder &7Pick" with no NBT with lore "&7This pickaxe will cost &c&l120 &cCompressed Netherite"
+                    set slot 21 of player's current inventory to purple stained glass pane with name " "
+                    set slot 22 of player's current inventory to shiny netherite pickaxe with name "&e%player%'s &dGem-Finder &7Pick" with no NBT with lore "&7This pickaxe will cost &c&l120 &cCompressed Netherite"
+                    set slot 23 of player's current inventory to purple stained glass pane with name " "
+                    set slot 24 of player's current inventory to shiny netherite pickaxe with name "&e%player%'s &3Extra-Drops &7Pick" with no NBT with lore "&7This pickaxe will cost &c&l120 &cCompressed Netherite"
+                    set slot 25 of player's current inventory to purple stained glass pane with name " "
+                    set slot 26 of player's current inventory to purple stained glass pane with name " "
+
+                    set slot 27 of player's current inventory to purple stained glass pane with name " "
+                    set slot 28 of player's current inventory to purple stained glass pane with name " "
+                    set slot 29 of player's current inventory to purple stained glass pane with name " "
+                    set slot 30 of player's current inventory to purple stained glass pane with name " "
+                    set slot 31 of player's current inventory to purple stained glass pane with name " "
+                    set slot 32 of player's current inventory to purple stained glass pane with name " "
+                    set slot 33 of player's current inventory to purple stained glass pane with name " "
+                    set slot 34 of player's current inventory to purple stained glass pane with name " "
+                    set slot 35 of player's current inventory to purple stained glass pane with name " "
+
+                    set slot 36 of player's current inventory to purple stained glass pane with name " "
+                    set slot 37 of player's current inventory to purple stained glass pane with name " "
+                    set slot 38 of player's current inventory to purple stained glass pane with name " "
+                    set slot 39 of player's current inventory to purple stained glass pane with name " "
+                    set slot 40 of player's current inventory to shiny barrier with name "&cBack"
+                    set slot 41 of player's current inventory to purple stained glass pane with name " "
+                    set slot 42 of player's current inventory to purple stained glass pane with name " "
+                    set slot 43 of player's current inventory to purple stained glass pane with name " "
+                    set slot 44 of player's current inventory to purple stained glass pane with name " "
+
+                if {Dark_Mode} is true:
+                    open chest inventory with 3 rows named "&ePickaxe &7GUI" to player
+                    wait 1 tick
+                    set slot 0 of player's current inventory to black stained glass pane with name " "
+                    set slot 1 of player's current inventory to black stained glass pane with name " "
+                    set slot 2 of player's current inventory to black stained glass pane with name " "
+                    set slot 3 of player's current inventory to black stained glass pane with name " "
+                    set slot 4 of player's current inventory to shiny netherite pickaxe with name "&e%player%'s &7Pick" with no NBT with lore "&7This pickaxe will cost &c&l360 &cCompressed Netherite"
+                    set slot 5 of player's current inventory to black stained glass pane with name " "
+                    set slot 6 of player's current inventory to black stained glass pane with name " "
+                    set slot 7 of player's current inventory to black stained glass pane with name " "
+                    set slot 8 of player's current inventory to black stained glass pane with name " "
+    
+                    set slot 9 of player's current inventory to black stained glass pane with name " "
+                    set slot 10 of player's current inventory to black stained glass pane with name " "
+                    set slot 11 of player's current inventory to black stained glass pane with name " "
+                    set slot 12 of player's current inventory to black stained glass pane with name " "
+                    set slot 13 of player's current inventory to black stained glass pane with name " "
+                    set slot 14 of player's current inventory to black stained glass pane with name " "
+                    set slot 15 of player's current inventory to black stained glass pane with name " "
+                    set slot 16 of player's current inventory to black stained glass pane with name " "
+                    set slot 17 of player's current inventory to black stained glass pane with name " "
+    
+                    set slot 18 of player's current inventory to black stained glass pane with name " "
+                    set slot 19 of player's current inventory to black stained glass pane with name " "
+                    set slot 20 of player's current inventory to shiny netherite pickaxe with name "&e%player%'s &aXp-Finder &7Pick" with no NBT with lore "&7This pickaxe will cost &c&l120 &cCompressed Netherite"
+                    set slot 21 of player's current inventory to black stained glass pane with name " "
+                    set slot 22 of player's current inventory to shiny netherite pickaxe with name "&e%player%'s &dGem-Finder &7Pick" with no NBT with lore "&7This pickaxe will cost &c&l120 &cCompressed Netherite"
+                    set slot 23 of player's current inventory to black stained glass pane with name " "
+                    set slot 24 of player's current inventory to shiny netherite pickaxe with name "&e%player%'s &3Extra-Drops &7Pick" with no NBT with lore "&7This pickaxe will cost &c&l120 &cCompressed Netherite"
+                    set slot 25 of player's current inventory to black stained glass pane with name " "
+                    set slot 26 of player's current inventory to black stained glass pane with name " "
+    
+                    set slot 27 of player's current inventory to black stained glass pane with name " "
+                    set slot 28 of player's current inventory to black stained glass pane with name " "
+                    set slot 29 of player's current inventory to black stained glass pane with name " "
+                    set slot 30 of player's current inventory to black stained glass pane with name " "
+                    set slot 31 of player's current inventory to black stained glass pane with name " "
+                    set slot 32 of player's current inventory to black stained glass pane with name " "
+                    set slot 33 of player's current inventory to black stained glass pane with name " "
+                    set slot 34 of player's current inventory to black stained glass pane with name " "
+                    set slot 35 of player's current inventory to black stained glass pane with name " "
+    
+                    set slot 36 of player's current inventory to black stained glass pane with name " "
+                    set slot 37 of player's current inventory to black stained glass pane with name " "
+                    set slot 38 of player's current inventory to black stained glass pane with name " "
+                    set slot 39 of player's current inventory to black stained glass pane with name " "
+                    set slot 40 of player's current inventory to shiny barrier with name "&cBack"
+                    set slot 41 of player's current inventory to black stained glass pane with name " "
+                    set slot 42 of player's current inventory to black stained glass pane with name " "
+                    set slot 43 of player's current inventory to black stained glass pane with name " "
+                    set slot 44 of player's current inventory to black stained glass pane with name " "
+
+MainGui:
+    if {Dark_Mode} is false:
+            open chest inventory with 4 rows named "&aCustom &dEnchants &7GUI" to player
+            wait 1 tick
+            set slot 0 of player's current inventory to purple stained glass pane with name "&cExperimental"
+            set slot 1 of player's current inventory to purple stained glass pane with name " "
+            set slot 2 of player's current inventory to purple stained glass pane with name " "
+            set slot 3 of player's current inventory to purple stained glass pane with name " "
+            set slot 4 of player's current inventory to purple stained glass pane with name " "
+            set slot 5 of player's current inventory to purple stained glass pane with name " "
+            set slot 6 of player's current inventory to purple stained glass pane with name " "
+            set slot 7 of player's current inventory to purple stained glass pane with name " "
+            set slot 8 of player's current inventory to purple stained glass pane with name " "
+
+            set slot 9 of player's current inventory to purple stained glass pane with name " "
+            set slot 10 of player's current inventory to purple stained glass pane with name " "
+            set slot 11 of player's current inventory to enchanted book with name "&aCustom &dEnchants" with no NBT
+            set slot 12 of player's current inventory to purple stained glass pane with name " "
+            set slot 13 of player's current inventory to purple stained glass pane with name " "
+            set slot 14 of player's current inventory to purple stained glass pane with name " "
+            set slot 15 of player's current inventory to purple stained glass pane with name " "
+            set slot 16 of player's current inventory to shiny netherite pickaxe with name "&ePickaxes" with no NBT
+            set slot 17 of player's current inventory to purple stained glass pane with name " "
+
+            set slot 18 of player's current inventory to purple stained glass pane with name " "
+            set slot 19 of player's current inventory to purple stained glass pane with name " "
+            set slot 20 of player's current inventory to purple stained glass pane with name " "
+            set slot 21 of player's current inventory to purple stained glass pane with name " "
+            set slot 22 of player's current inventory to purple stained glass pane with name " "
+            set slot 23 of player's current inventory to purple stained glass pane with name " "
+            set slot 24 of player's current inventory to purple stained glass pane with name " "
+            set slot 25 of player's current inventory to purple stained glass pane with name " "
+            set slot 26 of player's current inventory to purple stained glass pane with name " "
+
+            set slot 27 of player's current inventory to purple stained glass pane with name " "
+            set slot 28 of player's current inventory to purple stained glass pane with name " "
+            set slot 29 of player's current inventory to purple stained glass pane with name " "
+            set slot 30 of player's current inventory to purple stained glass pane with name " "
+            set slot 31 of player's current inventory to shiny barrier with name "&8Settings &c(Maybe)" with no NBT
+            set slot 32 of player's current inventory to purple stained glass pane with name " "
+            set slot 33 of player's current inventory to purple stained glass pane with name " "
+            set slot 34 of player's current inventory to purple stained glass pane with name " "
+            set slot 35 of player's current inventory to purple stained glass pane with name " "
+        
+        if {Dark_Mode} is true:
+            open chest inventory with 4 rows named "&aCustom &dEnchants &7GUI" to player
+            wait 1 tick
+            set slot 0 of player's current inventory to black stained glass pane with name "&cExperimental"
+            set slot 1 of player's current inventory to black stained glass pane with name " "
+            set slot 2 of player's current inventory to black stained glass pane with name " "
+            set slot 3 of player's current inventory to black stained glass pane with name " "
+            set slot 4 of player's current inventory to black stained glass pane with name " "
+            set slot 5 of player's current inventory to black stained glass pane with name " "
+            set slot 6 of player's current inventory to black stained glass pane with name " "
+            set slot 7 of player's current inventory to black stained glass pane with name " "
+            set slot 8 of player's current inventory to black stained glass pane with name " "
+
+            set slot 9 of player's current inventory to black stained glass pane with name " "
+            set slot 10 of player's current inventory to black stained glass pane with name " "
+            set slot 11 of player's current inventory to enchanted book with name "&aCustom &dEnchants" with no NBT
+            set slot 12 of player's current inventory to black stained glass pane with name " "
+            set slot 13 of player's current inventory to black stained glass pane with name " "
+            set slot 14 of player's current inventory to black stained glass pane with name " "
+            set slot 15 of player's current inventory to black stained glass pane with name " "
+            set slot 16 of player's current inventory to shiny netherite pickaxe with name "&ePickaxes" with no NBT
+            set slot 17 of player's current inventory to black stained glass pane with name " "
+
+            set slot 18 of player's current inventory to black stained glass pane with name " "
+            set slot 19 of player's current inventory to black stained glass pane with name " "
+            set slot 20 of player's current inventory to black stained glass pane with name " "
+            set slot 21 of player's current inventory to black stained glass pane with name " "
+            set slot 22 of player's current inventory to black stained glass pane with name " "
+            set slot 23 of player's current inventory to black stained glass pane with name " "
+            set slot 24 of player's current inventory to black stained glass pane with name " "
+            set slot 25 of player's current inventory to black stained glass pane with name " "
+            set slot 26 of player's current inventory to black stained glass pane with name " "
+
+            set slot 27 of player's current inventory to black stained glass pane with name " "
+            set slot 28 of player's current inventory to black stained glass pane with name " "
+            set slot 29 of player's current inventory to black stained glass pane with name " "
+            set slot 30 of player's current inventory to black stained glass pane with name " "
+            set slot 31 of player's current inventory to shiny barrier with name "&8Settings &c(Maybe)" with no NBT
+            set slot 32 of player's current inventory to black stained glass pane with name " "
+            set slot 33 of player's current inventory to black stained glass pane with name " "
+            set slot 34 of player's current inventory to black stained glass pane with name " "
+            set slot 35 of player's current inventory to black stained glass pane with name " "

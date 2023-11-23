@@ -1,0 +1,8 @@
+command /currencycheck:
+    aliases: /cc
+    trigger:
+        send "[&5&lCurrency] &7&lChecker:%nl%&aXp&8: &a%{Xp_Amount.%player%}%%nl%&dGems&8: &d%{Gem_Amount.%player%}%"
+
+command /Token:
+	trigger:
+		give player 1 netherite block named "&0&lCompressed Netherite"

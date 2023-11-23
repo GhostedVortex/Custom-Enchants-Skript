@@ -1,0 +1,141 @@
+on inventory click:
+    if name of event-inventory is "&5&lEnchant GUI":
+        cancel event
+        if name of item is "&dGem-Finder &7Tier &7[&dI&7]":
+            if lore of player's tool contains "&dGem-Finder: &7[&dI&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dII&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dIII&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dIV&7]":
+                send "&cYou already have the max level of Gem-Finder(For now)"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder: &cNull":
+                if player's inventory contains 10 netherite block named "&0&lCompressed Netherite":
+                    remove 10 netherite block with name "&0&lCompressed Netherite" from player's inventory
+                    set line 2 of lore of player's tool to "&dGem-Finder &7Tier &7[&dI&7]"
+
+                else:
+                    cancel event
+                    send "&cYou do not have enough &0&lCompressed Netherite"
+
+        if name of item is "&dGem-Finder &7Tier &7[&dII&7]":
+            if lore of player's tool contains "&dGem-Finder: &cNull":
+                send "&cYou need to buy tier I before buying tier II"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dII&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dIII&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dIV&7]":
+                send "&cYou already have the max level of Gem-Finder(For now)"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dI&7]":
+                if player's inventory contains 10 netherite block named "&0&lCompressed Netherite":
+                    remove 10 netherite block with name "&0&lCompressed Netherite" from player's inventory
+                    set line 2 of lore of player's tool to "&dGem-Finder &7Tier &7[&dII&7]"
+
+                else:
+                    cancel event
+                    send "&cYou do not have enough &0&lCompressed Netherite"
+
+        if name of item is "&dGem-Finder &7Tier &7[&dIII&7]":
+            if lore of player's tool contains "&dGem-Finder: &cNull":
+                send "&cYou need to buy tier II before buying tier III"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dI&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dIII&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dIV&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dII&7]":
+                if player's inventory contains 10 netherite block named "&0&lCompressed Netherite":
+                    remove 10 netherite block with name "&0&lCompressed Netherite" from player's inventory
+                    set line 2 of lore of player's tool to "&dGem-Finder &7Tier &7[&dIII&7]"
+                
+                else:
+                    cancel event
+                    send "&cYou do not have enough &0&lCompressed Netherite"
+
+        if name of item is "&dGem-Finder &7Tier &7[&dIV&7]":
+            if lore of player's tool contains "&dGem-Finder: &cNull":
+                send "&cYou need to buy tier III before buying tier IV"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dI&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dII&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dIV&7]":
+                send "&cYou already have this level or above!"
+                cancel event
+            if lore of player's tool contains "&dGem-Finder &7Tier &7[&dIII&7]":
+                if player's inventory contains 10 netherite block named "&0&lCompressed Netherite":
+                    remove 10 netherite block with name "&0&lCompressed Netherite" from player's inventory
+                    set line 2 of lore of player's tool to "&dGem-Finder &7Tier &7[&dIV&7]"
+            
+                else:
+                    cancel event
+                    send "&cYou do not have enough &0&lCompressed Netherite"
+
+on break:
+    if lore of player's tool contains "&dGem-Finder: &7[&dI&7]":
+        chance of 0.4%:
+            send "&7[ &dGem-Finder triggered! &f| &d+1 Gem &7]"
+        add 1 to {Gem_Amount.%player%}
+        chance of 0.2%:
+            send "&7[ &dGem-Finder triggered! &f| &d+2 Gems &7]"
+            add 2 to {Gem_Amount.%player%}
+on break:
+    if lore of player's tool contains "&dGem-Finder: &7[&dII&7]":
+        chance of 0.8%:
+            send "&7[ &dGem-Finder triggered! &f| &d+1 Gem &7]"
+            add 1 to {Gem_Amount.%player%}
+        chance of 0.4%:
+            send "&7[ &dGem-Finder triggered! &f| &d+2 Gems &7]"
+            add 2 to {Gem_Amount.%player%}
+        chance of 0.2%:
+            send "&7[ &dGem-Finder triggered! &f| &d+3 Gems &7]"
+            add 3 to {Gem_Amount.%player%}
+on break:
+    if lore of player's tool contains "&dGem-Finder: &7[&dIII&7]":
+        chance of 1.2%:
+            send "&7[ &dGem-Finder triggered! &f| &d+1 Gem &7]"
+            add 1 to {Gem_Amount.%player%}
+        chance of 0.8%:
+            send "&7[ &dGem-Finder triggered! &f| &d+2 Gems &7]"
+            add 2 to {Gem_Amount.%player%}
+        chance of 0.4%:
+            send "&7[ &dGem-Finder triggered! &f| &d+3 Gems &7]"
+            add 3 to {Gem_Amount.%player%}
+        chance of 0.2%:
+            send "&7[ &dGem-Finder triggered! &f| &d+4 Gems &7]"
+            add 4 to {Gem_Amount.%player%}
+on break:
+    if lore of player's tool contains "&dGem-Finder: &7[&dIV&7]":
+        chance of 2.4%:
+            send "&7[ &dGem-Finder triggered! &f| &d+1 Gem &7]"
+            add 1 to {Gem_Amount.%player%}
+        chance of 1.2%:
+            send "&7[ &dGem-Finder triggered! &f| &d+2 Gems &7]"
+            add 2 to {Gem_Amount.%player%}
+        chance of 0.8%:
+            send "&7[ &dGem-Finder triggered! &f| &d+3 Gems &7]"
+            add 3 to {Gem_Amount.%player%}
+        chance of 0.4%:
+            send "&7[ &dGem-Finder triggered! &f| &d+4 Gems &7]"
+            add 4 to {Gem_Amount.%player%}
+        chance of 0.2%:
+            send "&7[ &dGem-Finder triggered! &f| &d+5 Gems &7]"
+            add 5 to {Gem_Amount.%player%}
